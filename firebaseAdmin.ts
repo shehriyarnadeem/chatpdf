@@ -5,7 +5,7 @@ var serviceKey = require("@/service_key.json");
 
 let app: App;
 
-if(getApps.length === 0){
+if(getApps().length === 0){
     app = initializeApp({
         credential: cert(serviceKey)
     })
